@@ -1,0 +1,24 @@
+<div class="person-listing participant">
+    <div class="avatar">
+        <img src="{{ avatarUrl }}" alt="Avatar Alt Text">
+        {{#online}}
+            <div class="online-indicator"></div>
+        {{/online}}
+    </div>
+    <div class="person-name">{{ userName }}</div>
+    <div class="person-info">
+        {{#tagLabel}}
+            <div class="tag {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+        {{/tagLabel}}
+        <span class="followers">{{ followersCount }} Followers</span>
+    </div>
+    {{#remove}}
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+    {{/remove}}
+    {{#add}}
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt=""></button>
+    {{/add}}
+    {{#pending}}
+        <button class="btn btn-outline btn-fit">Pending...</button>
+    {{/pending}}
+</div>

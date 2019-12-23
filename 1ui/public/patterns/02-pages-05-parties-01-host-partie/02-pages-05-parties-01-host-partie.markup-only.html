@@ -1,0 +1,236 @@
+<div class="page page-host-partie show-search">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Host Partie</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare" href="#"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+            <div class="search-input search-settings">
+    <div class="content">
+        <img src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="Search game titles" />
+        <a href="#" class="cancel">Cancel</a>
+            <button class="btn btn-bare btn-settings" onclick="openModal('#search-settings-modal')"><img
+                    src="/images/icons/24px/settings.svg"
+                    alt="Settings Icon"></button>
+    </div>
+</div>
+
+</header>
+
+    <main class="content">
+        <div class="game-list">
+                <div class="game-list-item" onclick="openModal('#host-modal')">
+    <img src="/images/game-1.png" srcset="/images/game-1@2x.png 2x, /images/game-1@3x.png 3x" alt="Game Image Alt">
+    <div class="image-overlay">
+        <span class="game-title">PUBG</span>
+        <span class="game-parties"><img src="/images/icons/24px/partie-filled-blue.svg" alt="Partie Icon">123</span>
+            <div class="tag tag--exact-match">Exact Match</div>
+    </div>
+</div>
+
+                <div class="game-list-item" onclick="openModal('#host-modal')">
+    <img src="/images/game-2.png" srcset="/images/game-2@2x.png 2x, /images/game-2@3x.png 3x" alt="Game Image Alt">
+    <div class="image-overlay">
+        <span class="game-title">Apex Legends</span>
+        <span class="game-parties"><img src="/images/icons/24px/partie-filled-blue.svg" alt="Partie Icon">456</span>
+            <div class="tag tag--exact-match">Exact Match</div>
+    </div>
+</div>
+
+                <div class="game-list-item" onclick="openModal('#host-modal')">
+    <img src="/images/game-3.png" srcset="/images/game-3@2x.png 2x, /images/game-3@3x.png 3x" alt="Game Image Alt">
+    <div class="image-overlay">
+        <span class="game-title">Destiny 2: Forsaken</span>
+        <span class="game-parties"><img src="/images/icons/24px/partie-filled-blue.svg" alt="Partie Icon">789</span>
+            <span class="match-percent ">96%</span>
+    </div>
+</div>
+
+                <div class="game-list-item" onclick="openModal('#host-modal')">
+    <img src="/images/game-4.png" srcset="/images/game-4@2x.png 2x, /images/game-4@3x.png 3x" alt="Game Image Alt">
+    <div class="image-overlay">
+        <span class="game-title">Rocket League</span>
+        <span class="game-parties"><img src="/images/icons/24px/partie-filled-blue.svg" alt="Partie Icon">321</span>
+            <span class="match-percent moderate-match">74%</span>
+    </div>
+</div>
+
+                <div class="game-list-item" onclick="openModal('#host-modal')">
+    <img src="/images/game-1.png" srcset="/images/game-1@2x.png 2x, /images/game-1@3x.png 3x" alt="Game Image Alt">
+    <div class="image-overlay">
+        <span class="game-title">PUBG</span>
+        <span class="game-parties"><img src="/images/icons/24px/partie-filled-blue.svg" alt="Partie Icon">123</span>
+            <span class="match-percent moderate-match">68%</span>
+    </div>
+</div>
+
+                <div class="game-list-item" onclick="openModal('#host-modal')">
+    <img src="/images/game-2.png" srcset="/images/game-2@2x.png 2x, /images/game-2@3x.png 3x" alt="Game Image Alt">
+    <div class="image-overlay">
+        <span class="game-title">Apex Legends</span>
+        <span class="game-parties"><img src="/images/icons/24px/partie-filled-blue.svg" alt="Partie Icon">456</span>
+            <span class="match-percent weak-match">42%</span>
+    </div>
+</div>
+
+        </div>
+    </main>
+    <div class="modal search-settings-modal dynamic-height" id="search-settings-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Search Settings</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+                <div class="setting-toggle">
+    <div class="toggle-main">
+        <div class="label-group">
+            <span class="setting-toggle-label">Exact Matches Only</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleSettingClass(event)">
+            <span class="slider round"></span>
+            <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+            <img src="/images/icons/misc/check.svg" alt="Check Icon">
+        </label>
+    </div>
+        <div class="toggle-help">
+            <p>Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle.</p>
+        </div>
+</div>
+
+
+                <div class="setting-toggle">
+    <div class="toggle-main">
+        <div class="label-group">
+                <img src="/images/icons/16px/steam-blue-muted.svg" class="disabled" alt="Steam Logo">
+                <img src="/images/icons/16px/steam.svg" class="enabled" alt="Steam Logo">
+            <span class="setting-toggle-label">Steam</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleSettingClass(event)">
+            <span class="slider round"></span>
+            <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+            <img src="/images/icons/misc/check.svg" alt="Check Icon">
+        </label>
+    </div>
+</div>
+
+                <div class="setting-toggle">
+    <div class="toggle-main">
+        <div class="label-group">
+                <img src="/images/icons/16px/xbox-blue-muted.svg" class="disabled" alt="Xbox Logo">
+                <img src="/images/icons/16px/xbox.svg" class="enabled" alt="Xbox Logo">
+            <span class="setting-toggle-label">Xbox</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleSettingClass(event)">
+            <span class="slider round"></span>
+            <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+            <img src="/images/icons/misc/check.svg" alt="Check Icon">
+        </label>
+    </div>
+</div>
+
+                <div class="setting-toggle">
+    <div class="toggle-main">
+        <div class="label-group">
+                <img src="/images/icons/16px/playstation-blue-muted.svg" class="disabled" alt="Playstation Logo">
+                <img src="/images/icons/16px/playstation.svg" class="enabled" alt="Playstation Logo">
+            <span class="setting-toggle-label">Playstation</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" onchange="toggleSettingClass(event)">
+            <span class="slider round"></span>
+            <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+            <img src="/images/icons/misc/check.svg" alt="Check Icon">
+        </label>
+    </div>
+</div>
+
+            <button class="btn bg-blue mv-24" onclick="closeModal()">Save</button>
+        </div>
+    </div>
+</div>
+
+    <div class="modal host-modal dynamic-height" id="host-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Apex Legends</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="form-control input-lg">
+    <label for="partie-name"></label>
+    <input type="text" name="" placeholder="Enter Partie name" value=""required/>
+</div>
+
+            <div class="tag-selection mb-24">
+                <div class="tag tag-lg active">PVE</div>
+                <div class="tag tag-lg active">PVP</div>
+                <div class="tag tag-lg">TAG</div>
+                <div class="tag tag-lg">TAG</div>
+                <div class="tag tag-lg">TAG</div>
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Game Type</label>
+                <select name="game-type" id="game-type" required>
+                    <option value="" disabled selected>Select game type</option>
+                    <option value="0">Squads</option>
+                    <option value="1">Something</option>
+                    <option value="2">Another Thing</option>
+                    <option value="3">One More Thing</option>
+                </select>
+            </div>
+            <div class="form-control ">
+    <label for="partie-objective">Objective</label>
+    <input type="text" name="" placeholder="Enter your Partie's objective" value=""required/>
+</div>
+
+            <div class="setting-toggle pt-0">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Privacy</span>
+                    </div>
+                    <div class="switch-group">
+                        <span class="status-message on">Closed Partie</span>
+                        <span class="status-message off">Open Partie</span>
+                        <label class="switch icons-lg">
+                            <input type="checkbox" onchange="toggleSettingClass(event)">
+                            <span class="slider round"></span>
+                            <img src="/images/icons/16px/lock-green.svg" alt="Locked Icon">
+                            <img src="/images/icons/16px/unlocked.svg" alt="Unlocked Icon">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label small">Agree to <a href="#">Partie Terms & Conditions</a></span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                        <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+                        <img src="/images/icons/misc/check.svg" alt="Check Icon">
+                    </label>
+                </div>
+            </div>
+            <button class="btn bg-teal mv-24" onclick="closeModal()">Host Partie</button>
+        </div>
+    </div>
+</div>
+
+</div>

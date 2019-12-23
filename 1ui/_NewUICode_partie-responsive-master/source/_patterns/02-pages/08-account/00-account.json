@@ -1,0 +1,36 @@
+{
+  "pageHeader": {
+    "account": true,
+    "notifications": true,
+    "title": "Account"
+  },
+  "partnerProgressPercent": "23",
+  "progressChecklistItems": [
+    {
+      "complete": false,
+      "description": "Host 25 Successful Parties",
+      "requiredCount": "25",
+      "completedCount": "2"
+    }, {
+      "complete": false,
+      "description": "Reach 20 Followers",
+      "requiredCount": "20",
+      "completedCount": "1"
+    }, {
+      "complete": false,
+      "description": "Receive 50 Tokens",
+      "requiredCount": "50",
+      "completedCount": "7"
+    }, {
+      "complete": true,
+      "description": "Get 10 5-Star Ratings",
+      "requiredCount": "10",
+      "completedCount": "10"
+    }, {
+      "complete": false,
+      "description": "Do something 60 times",
+      "requiredCount": "60",
+      "completedCount": "2"
+    }
+  ]
+}

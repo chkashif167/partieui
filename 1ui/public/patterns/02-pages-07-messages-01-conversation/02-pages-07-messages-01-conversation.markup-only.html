@@ -1,0 +1,75 @@
+<div class="page page-chat page-partie-room">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">AlphaEcho</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare" href="#" onclick="toggleFeedMenu()"><img src="/images/icons/24px/more.svg" alt="More Icon"></a>
+                    <a class="btn btn-bare" href="#"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+        <div class="chat-messages">
+                <div class="chat-message ">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text" class="avatar">
+    <div class="chat-message-meta">
+        <span class="chat-message-author">AlphaEcho</span>
+            <div class="tag tag-staff"><span>Staff</span></div>
+        <span class="chat-message-details">7:30 PM</span>
+    </div>
+    <div class="chat-message-content">
+        Thanks for joining Partie! Here are a few tips to help you get started. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+</div>
+
+                <div class="chat-message ">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text" class="avatar">
+    <div class="chat-message-meta">
+        <span class="chat-message-author">MeTeMeNeo</span>
+        <span class="chat-message-details">7:31 PM</span>
+    </div>
+    <div class="chat-message-content">
+        That&#39;s awesome, thank you! 😁
+    </div>
+</div>
+
+        </div>
+    </main>
+    <div class="chat-input">
+    <div class="form-control">
+        <textarea name="chat-message" id="message-input" placeholder="Say anything you want, be nice."></textarea>
+    </div>
+    <button class="btn">Send</button>
+</div>
+
+    <div class="menu-drawer">
+    <div class="content">
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#partie-settings-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img src="/images/icons/misc/partie-settings.svg" alt="Share Partie">
+                <span class="action-title">Partie Settings</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#twitter-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img src="/images/icons/misc/share-partie.svg" alt="Share Partie">
+                <span class="action-title">Share Partie</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consecteturw</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#leave-partie-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img src="/images/icons/misc/end-partie.svg" alt="Share Partie">
+                <span class="action-title">End Partie</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur adipi</span>
+            </div>
+        </button>
+    </div>
+</div>
+
+</div>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Partie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="../../css/normalize.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1573563051755" media="all" />
+
+    <meta name="theme-color" content="#6E4AFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="bg-dark">
+    
+<div class="modal" id="participants-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">9 Participants</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-participant","lineagePath":"../../patterns/01-components-02-chat-participant\\01-components-02-chat-participant.rendered.html"}],"lineage":[{"lineagePattern":"components-participant","lineagePath":"../../patterns/01-components-02-chat-participant\\01-components-02-chat-participant.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-partie-room-feedback","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room-feedback\\02-pages-05-parties-02-partie-room-feedback.rendered.html"},{"lineagePattern":"pages-partie-room-messages","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room-messages\\02-pages-05-parties-02-partie-room-messages.rendered.html"},{"lineagePattern":"pages-partie-room-public","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room-public\\02-pages-05-parties-02-partie-room-public.rendered.html"},{"lineagePattern":"pages-partie-room-rate","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room-rate\\02-pages-05-parties-02-partie-room-rate.rendered.html"},{"lineagePattern":"pages-partie-room","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room\\02-pages-05-parties-02-partie-room.rendered.html"}],"lineageR":[{"lineagePattern":"pages-partie-room-feedback","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room-feedback\\02-pages-05-parties-02-partie-room-feedback.rendered.html"},{"lineagePattern":"pages-partie-room-messages","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room-messages\\02-pages-05-parties-02-partie-room-messages.rendered.html"},{"lineagePattern":"pages-partie-room-public","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room-public\\02-pages-05-parties-02-partie-room-public.rendered.html"},{"lineagePattern":"pages-partie-room-rate","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room-rate\\02-pages-05-parties-02-partie-room-rate.rendered.html"},{"lineagePattern":"pages-partie-room","lineagePath":"../../patterns/02-pages-05-parties-02-partie-room\\02-pages-05-parties-02-partie-room.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"components","patternSubtype":"chat"},"patternExtension":"mustache","patternName":"Participants Modal","patternPartial":"components-participants-modal","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1573563051755">
+  (function() {
+    if (self != top) {
+      var cb = '1573563051755';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1573563051755">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>  <script src="../../js/app.js?"></script>
+  </body>
+</html>

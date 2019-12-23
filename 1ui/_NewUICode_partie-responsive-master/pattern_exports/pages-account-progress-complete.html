@@ -1,0 +1,116 @@
+<div class="page page-account">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare link-account" href="#"><img src="/images/icons/24px/user-placeholder.svg" alt="User Placeholder Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Account</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare link-notifications" href="#"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+</header>
+
+        <div class="partner-progress finished">
+        <div class="progress-primary" onclick="document.querySelector('.partner-progress').classList.toggle('expanded')">
+            <img src="/images/icons/24px/partie-filled-blue-muted.svg" alt="Partie Logo">
+            <span class="progress-title">Partner Progress</span>
+            <div class="progress-indicator">
+                <span class="progress-percent">100%</span>
+                <div class="progress-bar" data-progress-percent="100"></div>
+            </div>
+        </div>
+
+
+
+        <div class="progress-finished">
+            <p>Congrats! You can now apply to become a partner.</p>
+            <button class="btn bg-teal">Apply</button>
+        </div>
+
+
+    <button class="btn btn-bare btn-fill progress-collapse" onclick="document.querySelector('.partner-progress.expanded').classList.remove('expanded')">
+        <img src="/images/icons/16px/arrow.svg" alt="Collapse Icon">
+    </button>
+</div>
+
+    <main class="content">
+        <div class="account-option referral-link">
+            <img src="/images/icons/16px/link-blue-muted.svg" alt="Link Icon">
+            <span class="option-title">Referral Link</span>
+            <span class="link">https://partie.com/?id=939dzgx</span>
+            <button class="btn bg-black">Copy</button>
+        </div>
+        <div class="account-option" onclick="window.location = '&#x2F;patterns&#x2F;02-pages-08-account-01-preferences&#x2F;02-pages-08-account-01-preferences.rendered.html'">
+            <img src="/images/icons/16px/settings-blue-muted.svg" alt="Preferences Icon">
+            <span class="option-title">Preferences</span>
+        </div>
+        <div class="account-option" onclick="window.location = '&#x2F;patterns&#x2F;02-pages-08-account-02-account-notifications&#x2F;02-pages-08-account-02-account-notifications.rendered.html'">
+            <img src="/images/icons/16px/notifications-blue-muted.svg" alt="Notifications Icon">
+            <span class="option-title">Notifications Manager</span>
+        </div>
+        <div class="account-option" onclick="window.location = '&#x2F;patterns&#x2F;02-pages-08-account-03-privacy&#x2F;02-pages-08-account-03-privacy.rendered.html'">
+            <img src="/images/icons/16px/lock-blue-muted.svg" alt="Privacy Icon">
+            <span class="option-title">Privacy &amp; Safety</span>
+        </div>
+        <div class="account-option" onclick="openModal('#terms-modal')">
+            <img src="/images/icons/16px/terms-blue-muted.svg" alt="Terms Icon">
+            <span class="option-title">Terms</span>
+        </div>
+        <div class="account-option" onclick="openModal('#terms-modal')">
+            <img src="/images/icons/16px/community-blue-muted.svg" alt="Community Icon">
+            <span class="option-title">Community Guidelines</span>
+        </div>
+        <div class="account-option" onclick="openModal('#terms-modal')">
+            <img src="/images/icons/16px/help-blue-muted.svg" alt="Help Icon">
+            <span class="option-title">Help</span>
+        </div>
+        <div class="account-option" onclick="openModal('#terms-modal')">
+            <img src="/images/icons/16px/about-blue-muted.svg" alt="About Icon">
+            <span class="option-title">About</span>
+        </div>
+    </main>
+    <div class="tap-bar">
+    <nav>
+        <button class="btn btn-bare btn-tap-bar">
+            <img src="/images/icons/24px/home-filled.svg" alt="Home Icon">
+            <span class="t-nav">Home</span>
+        </button>
+        <button class="btn btn-bare btn-tap-bar">
+            <img src="/images/icons/24px/partie.svg" alt="Partie Icon">
+            <span class="t-nav">Partie</span>
+        </button>
+        <button class="btn btn-bare btn-tap-bar">
+            <img src="/images/icons/24px/chat.svg" alt="Chat Icon">
+            <span class="t-nav">Chat</span>
+        </button>
+        <button class="btn btn-bare btn-tap-bar">
+            <img src="/images/icons/24px/account.svg" alt="Account Icon">
+            <span class="t-nav">Account</span>
+        </button>
+    </nav>
+</div>
+
+    <div class="modal terms-modal" id="terms-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Terms</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable pb-24">
+                <h3 class="section-heading">Section Title</h3>
+                <p>90's health goth hella squid palo santo, brooklyn chillwave austin letterpress flexitarian. Crucifix tote bag cardigan, hell of tofu XOXO bespoke meditation hammock vinyl jianbing subway tile keffiyeh. Intelligentsia sustainable woke, twee scenester gastropub prism pickled vinyl. Crucifix unicorn flexitarian pinterest meh chicharrones. Occupy chia freegan, schlitz cloud bread humblebrag quinoa banjo.</p>
+                <p>Wayfarers kogi bicycle rights, seitan paleo swag raw denim edison bulb synth literally banjo. Knausgaard swag scenester meditation, microdosing wolf bespoke lo-fi fashion axe salvia. Helvetica snackwave hella lo-fi kale chips tumblr subway tile viral selfies pabst deep v man braid drinking vinegar. +1 activated charcoal small batch flannel ennui, mumblecore cred blue bottle meggings pop-up actually whatever locavore. 3 wolf moon air plant pok pok before they sold out franzen.</p>
+                <h3 class="section-heading">Section Title II</h3>
+                <p>Cornhole fixie distillery synth slow-carb, biodiesel marfa hammock lomo whatever meggings everyday carry deep v pickled echo park. PBR&B four loko kinfolk mixtape pork belly viral craft beer bespoke put a bird on it YOLO kogi tofu seitan. Chartreuse tattooed twee listicle, schlitz slow-carb VHS asymmetrical meggings tumeric yr af gentrify bicycle rights. Cardigan crucifix palo santo helvetica ethical. Umami locavore echo park af vegan tumeric kale chips unicorn taxidermy scenester lo-fi.</p>
+                <p>Vape lumbersexual echo park, brooklyn lomo iceland lo-fi keytar next level 8-bit la croix banh mi. Flexitarian direct trade forage, everyday carry vexillologist authentic seitan activated charcoal try-hard. Biodiesel meditation adaptogen migas poutine bicycle rights cliche messenger bag. 3 wolf moon vexillologist artisan, aesthetic before they sold out knausgaard direct trade hashtag typewriter mlkshk copper mug cold-pressed.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

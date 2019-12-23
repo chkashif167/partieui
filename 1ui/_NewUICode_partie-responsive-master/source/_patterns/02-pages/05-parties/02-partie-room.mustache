@@ -1,0 +1,32 @@
+<div class="page page-chat page-partie-room show-user-list">
+    {{> components-page-header }}
+    <main class="content">
+        <div class="chat-messages">
+            {{#messages}}
+                {{#notification}}
+                    {{> components-chat-notification }}
+                {{/notification}}
+                {{^notification}}
+                    {{> components-chat-message }}
+                {{/notification}}
+            {{/messages}}
+        </div>
+    </main>
+    {{> components-chat-input }}
+    {{> components-participants-modal }}
+    {{> components-requests-modal }}
+    {{> components-invite-modal }}
+    {{> components-removal-modal }}
+    {{> components-chat-menu }}
+    {{> components-partie-settings-modal }}
+    {{> components-leave-partie-modal }}
+    {{> components-social-share-modal }}
+
+    {{#showRatingModal}}
+        {{> components-rate-partie-modal }}
+    {{/showRatingModal}}
+
+    {{#showFeedbackModal}}
+        {{> components-feedback-modal }}
+    {{/showFeedbackModal}}
+</div>

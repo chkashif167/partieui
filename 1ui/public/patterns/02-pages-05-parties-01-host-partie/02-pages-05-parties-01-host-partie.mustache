@@ -1,0 +1,12 @@
+<div class="page page-host-partie show-search">
+    {{> components-page-header }}
+    <main class="content">
+        <div class="game-list">
+            {{# games }}
+                {{> components-game-list-item }}
+            {{/games}}
+        </div>
+    </main>
+    {{> components-search-settings }}
+    {{> components-partie-setup-modal }}
+</div>

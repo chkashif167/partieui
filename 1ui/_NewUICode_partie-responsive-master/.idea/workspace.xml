@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ba29ee9-83e3-40fb-91ad-e63500489187" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1PfYJEuGKfyuM6fR8vYTbfkTXyO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/js" />
+      <recent name="$PROJECT_DIR$/source" />
+      <recent name="$PROJECT_DIR$/source/manifest" />
+      <recent name="$PROJECT_DIR$/source/images/icons/misc" />
+      <recent name="$PROJECT_DIR$/source/images/icons/32px" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/images" />
+      <recent name="$PROJECT_DIR$/source/images/icons/misc" />
+      <recent name="$PROJECT_DIR$/source/images/icons" />
+      <recent name="$PROJECT_DIR$/source/images/comps" />
+      <recent name="$PROJECT_DIR$/source/fonts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ba29ee9-83e3-40fb-91ad-e63500489187" name="Default Changelist" comment="" />
+      <created>1557156008188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557156008188</updated>
+      <workItem from="1557156009277" duration="19088000" />
+      <workItem from="1557238384645" duration="22683000" />
+      <workItem from="1557419221843" duration="10518000" />
+      <workItem from="1557509012139" duration="5580000" />
+      <workItem from="1557754895561" duration="15041000" />
+      <workItem from="1557847754936" duration="10968000" />
+      <workItem from="1557932534578" duration="23090000" />
+      <workItem from="1558292673479" duration="9000" />
+      <workItem from="1558364506836" duration="9273000" />
+      <workItem from="1558451678737" duration="11655000" />
+      <workItem from="1558531931073" duration="13781000" />
+      <workItem from="1558624772142" duration="47971000" />
+      <workItem from="1559227323604" duration="9457000" />
+      <workItem from="1559306978225" duration="37183000" />
+      <workItem from="1560129069702" duration="21000" />
+      <workItem from="1566266550878" duration="1744000" />
+      <workItem from="1568056319929" duration="101000" />
+      <workItem from="1569340630612" duration="1732000" />
+      <workItem from="1569430897091" duration="7286000" />
+      <workItem from="1569458709529" duration="2432000" />
+      <workItem from="1570237678241" duration="10782000" />
+      <workItem from="1570451731807" duration="19000" />
+      <workItem from="1570451762054" duration="4702000" />
+      <workItem from="1570495362422" duration="4983000" />
+      <workItem from="1570587037448" duration="2515000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Partie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="../../css/normalize.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1573563051755" media="all" />
+
+    <meta name="theme-color" content="#6E4AFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="bg-dark">
+    
+<div class="page page-sign-in">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare" href="&#x2F;patterns&#x2F;02-pages-00-create-account-02-verify-account&#x2F;02-pages-00-create-account-02-verify-account.rendered.html"><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Sign In</h1>
+            <div class="actions--right">
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+            <div class="message-panel ">
+    
+        <img src="/images/icons/16px/success.svg" alt="Success Icon">
+    
+    <p>Password reset successful.</p>
+</div>
+
+        <form class="form" action="">
+            <div class="form-control ">
+    <label for="username">User Name</label>
+    <input type="text" name="" placeholder="Enter your username" value=""required/>
+</div>
+
+            <div class="form-control ">
+    <label for="password">Password</label>
+    <input type="password" name="" placeholder="Enter your password" value=""required/>
+</div>
+
+            <a class="btn bg-blue" href="/patterns/02-pages-01-sign-in-00-sign-in/02-pages-01-sign-in-00-sign-in.rendered.html">
+    Sign In
+</a>
+
+        </form>
+        <p class="help-message"><a href="&#x2F;patterns&#x2F;02-pages-02-reset-password-00-reset-password\02-pages-02-reset-password-00-reset-password.rendered.html">Forgot Password?</a></p>
+    </main>
+</div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-page-header","lineagePath":"../../patterns/01-components-page-header\\01-components-page-header.rendered.html"},{"lineagePattern":"components-message-panel","lineagePath":"../../patterns/01-components-message-panel\\01-components-message-panel.rendered.html"},{"lineagePattern":"elements-input","lineagePath":"../../patterns/00-elements-input\\00-elements-input.rendered.html"},{"lineagePattern":"elements-link-button","lineagePath":"../../patterns/00-elements-buttons-link-button\\00-elements-buttons-link-button.rendered.html"}],"lineage":[{"lineagePattern":"components-page-header","lineagePath":"../../patterns/01-components-page-header\\01-components-page-header.rendered.html"},{"lineagePattern":"components-message-panel","lineagePath":"../../patterns/01-components-message-panel\\01-components-message-panel.rendered.html"},{"lineagePattern":"elements-input","lineagePath":"../../patterns/00-elements-input\\00-elements-input.rendered.html"},{"lineagePattern":"elements-link-button","lineagePath":"../../patterns/00-elements-buttons-link-button\\00-elements-buttons-link-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"sign-in"},"patternExtension":"mustache","patternName":"Sign In Reset Success","patternPartial":"pages-sign-in-reset-success","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1573563051755">
+  (function() {
+    if (self != top) {
+      var cb = '1573563051755';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1573563051755">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>  <script src="../../js/app.js?"></script>
+  </body>
+</html>

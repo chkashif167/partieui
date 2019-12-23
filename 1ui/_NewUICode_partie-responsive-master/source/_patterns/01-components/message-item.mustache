@@ -1,0 +1,18 @@
+<div class="person-listing message-item">
+    <div class="avatar">
+        <img src="{{ avatarUrl }}" alt="Avatar Alt Text">
+        {{#online}}
+            <div class="online-indicator"></div>
+        {{/online}}
+    </div>
+    <div class="person-name">
+        <span>{{ userName }}</span>
+        {{#tagLabel}}
+            <div class="tag {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+        {{/tagLabel}}
+    </div>
+    <div class="person-info">
+        <span>{{ messageText }}</span>
+    </div>
+    <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" alt="Remove Icon"></button>
+</div>

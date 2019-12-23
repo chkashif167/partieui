@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Partie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="../../css/normalize.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1573563051755" media="all" />
+
+    <meta name="theme-color" content="#6E4AFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="bg-dark">
+    
+<div class="page page-edit-profile">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Edit Profile</h1>
+            <div class="actions--right">
+                    <a href="#" class="btn btn-bare"><span class="btn-inner">Save</span></a>
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+        <form class="form" action="">
+            <div class="avatar-setting">
+                <img class="avatar" src="/images/avatar-johnny.png" alt="User Avatar">
+                <a href="#">Upload Photo</a>
+            </div>
+                <div class="form-control ">
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" placeholder="" value="Johnny"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" placeholder="" value="Doe"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="dob" placeholder="" value="1999-12-01"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="" value="johnny@doe.com"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" placeholder="" value="415-987-6543"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="location">Location</label>
+    <input type="text" name="location" placeholder="" value="San Francisco, CA"required/>
+</div>
+
+
+            <div class="form-control">
+                <label for="bio">Bio</label>
+                <textarea name="bio" id="bio" required>Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarers cray gastropub cred green juice PBR&B.</textarea>
+            </div>
+
+                <div class="form-control ">
+    <label for="profileLink">Link</label>
+    <input type="text" name="profileLink" placeholder="" value="http:&#x2F;&#x2F;www.mysite.com"required/>
+</div>
+
+                <div class="form-control platforms-select custom-select">
+    <label for="platforms">Platforms</label>
+    <input type="text" name="platforms" placeholder="" value="PS4, XBOX, Steam"/>
+</div>
+
+            <div class="social-connection">
+                <button class="btn btn-bare facebook-connect connected">
+                    <span class="btn-inner">
+                        <img src="/images/facebook.png" srcset="/images/facebook@2x.png 2x, /images/facebook@3x.png 3x" alt="Facebook Logo">
+                            <span>my.facebook.username</span>
+                    </span>
+                </button>
+                    <a href="#">Unlink Account</a>
+            </div>
+        </form>
+    </main>
+        <div class="modal preference-modal dynamic-height" id="platforms-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/back-carat.svg" alt="Back Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <h2>Select Your Platforms</h2>
+                <div class="checkbox-group">
+        <div class="checkbox-item">
+            <label class="checkbox checked">
+    <span>PS4</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox checked">
+    <span>XBOX</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox checked">
+    <span>Steam</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Uplay</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Epic</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-page-header","lineagePath":"../../patterns/01-components-page-header\\01-components-page-header.rendered.html"},{"lineagePattern":"elements-input","lineagePath":"../../patterns/00-elements-input\\00-elements-input.rendered.html"},{"lineagePattern":"components-preference-modal","lineagePath":"../../patterns/01-components-04-account-preference-modal\\01-components-04-account-preference-modal.rendered.html"}],"lineage":[{"lineagePattern":"components-page-header","lineagePath":"../../patterns/01-components-page-header\\01-components-page-header.rendered.html"},{"lineagePattern":"elements-input","lineagePath":"../../patterns/00-elements-input\\00-elements-input.rendered.html"},{"lineagePattern":"components-preference-modal","lineagePath":"../../patterns/01-components-04-account-preference-modal\\01-components-04-account-preference-modal.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"edit-profile"},"patternExtension":"mustache","patternName":"Edit Profile Linked Social","patternPartial":"pages-edit-profile-linked-social","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1573563051755">
+  (function() {
+    if (self != top) {
+      var cb = '1573563051755';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1573563051755">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>  <script src="../../js/app.js?"></script>
+  </body>
+</html>

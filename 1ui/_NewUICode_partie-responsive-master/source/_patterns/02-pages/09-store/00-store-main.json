@@ -1,0 +1,36 @@
+{
+  "pageHeader": {
+    "account": true,
+    "notifications": true,
+    "title": "Partie Store",
+    "search": true,
+    "searchPlaceholder": "Search Store"
+  },
+  "categories": [
+    {
+      "title": "Featured",
+      "items": [
+        { "description": "Lorem ipsum dolor product name" },
+        { "description": "Lorem ipsum dolor product name" },
+        { "description": "Lorem ipsum dolor product name" },
+        { "description": "Lorem ipsum dolor product name" }
+      ]
+    }, {
+      "title": "Popular",
+      "items": [
+        { "description": "Lorem ipsum dolor product name" },
+        { "description": "Lorem ipsum dolor product name" },
+        { "description": "Lorem ipsum dolor product name" },
+        { "description": "Lorem ipsum dolor product name" }
+      ]
+    }, {
+      "title": "New Releases",
+      "items": [
+        { "description": "Lorem ipsum dolor product name" },
+        { "description": "Lorem ipsum dolor product name" },
+        { "description": "Lorem ipsum dolor product name" },
+        { "description": "Lorem ipsum dolor product name" }
+      ]
+    }
+  ]
+}

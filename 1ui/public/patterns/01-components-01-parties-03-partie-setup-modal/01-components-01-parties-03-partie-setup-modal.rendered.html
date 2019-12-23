@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Partie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="../../css/normalize.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1573563051755" media="all" />
+
+    <meta name="theme-color" content="#6E4AFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="bg-dark">
+    
+<div class="modal host-modal dynamic-height" id="host-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Apex Legends</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="form-control input-lg">
+    <label for="partie-name"></label>
+    <input type="text" name="" placeholder="Enter Partie name" value=""required/>
+</div>
+
+            <div class="tag-selection mb-24">
+                <div class="tag tag-lg active">PVE</div>
+                <div class="tag tag-lg active">PVP</div>
+                <div class="tag tag-lg">TAG</div>
+                <div class="tag tag-lg">TAG</div>
+                <div class="tag tag-lg">TAG</div>
+            </div>
+            <div class="form-control custom-select">
+                <label for="game-type">Game Type</label>
+                <select name="game-type" id="game-type" required>
+                    <option value="" disabled selected>Select game type</option>
+                    <option value="0">Squads</option>
+                    <option value="1">Something</option>
+                    <option value="2">Another Thing</option>
+                    <option value="3">One More Thing</option>
+                </select>
+            </div>
+            <div class="form-control ">
+    <label for="partie-objective">Objective</label>
+    <input type="text" name="" placeholder="Enter your Partie's objective" value=""required/>
+</div>
+
+            <div class="setting-toggle pt-0">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Privacy</span>
+                    </div>
+                    <div class="switch-group">
+                        <span class="status-message on">Closed Partie</span>
+                        <span class="status-message off">Open Partie</span>
+                        <label class="switch icons-lg">
+                            <input type="checkbox" onchange="toggleSettingClass(event)">
+                            <span class="slider round"></span>
+                            <img src="/images/icons/16px/lock-green.svg" alt="Locked Icon">
+                            <img src="/images/icons/16px/unlocked.svg" alt="Unlocked Icon">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label small">Agree to <a href="#">Partie Terms & Conditions</a></span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                        <img src="/images/icons/misc/check-green.svg" alt="Check Icon">
+                        <img src="/images/icons/misc/check.svg" alt="Check Icon">
+                    </label>
+                </div>
+            </div>
+            <button class="btn bg-teal mv-24" onclick="closeModal()">Host Partie</button>
+        </div>
+    </div>
+</div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"elements-input","lineagePath":"../../patterns/00-elements-input\\00-elements-input.rendered.html"}],"lineage":[{"lineagePattern":"elements-input","lineagePath":"../../patterns/00-elements-input\\00-elements-input.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-host-partie","lineagePath":"../../patterns/02-pages-05-parties-01-host-partie\\02-pages-05-parties-01-host-partie.rendered.html"}],"lineageR":[{"lineagePattern":"pages-host-partie","lineagePath":"../../patterns/02-pages-05-parties-01-host-partie\\02-pages-05-parties-01-host-partie.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"components","patternSubtype":"parties"},"patternExtension":"mustache","patternName":"Partie Setup Modal","patternPartial":"components-partie-setup-modal","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1573563051755">
+  (function() {
+    if (self != top) {
+      var cb = '1573563051755';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1573563051755">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>  <script src="../../js/app.js?"></script>
+  </body>
+</html>

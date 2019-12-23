@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Partie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="../../css/normalize.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1573563051755" media="all" />
+
+    <meta name="theme-color" content="#6E4AFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="bg-dark">
+    
+<div class="page page-create-account">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                
+                    <a class="btn btn-bare" href="/patterns/02-pages-00-create-account-00-landing/02-pages-00-create-account-00-landing.rendered.html"><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+                
+            </div>
+            <h1 class="h2 t-center">Create Account</h1>
+            <div class="actions--right">
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+        <form class="form" action="">
+            <div class="form-control ">
+    <label for="username">User Name</label>
+    <input type="text" name="" placeholder="Enter a unique username" value=""required/>
+</div>
+
+            <div class="form-control ">
+    <label for="firstname">First Name</label>
+    <input type="text" name="" placeholder="Enter your first name" value=""required/>
+</div>
+
+            <div class="form-control ">
+    <label for="lastname">Last Name</label>
+    <input type="text" name="" placeholder="Enter your last name" value=""required/>
+</div>
+
+            <div class="form-control ">
+    <label for="email">Email</label>
+    <input type="email" name="" placeholder="Enter a valid email address" value=""required/>
+</div>
+
+            <div class="form-control ">
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="" placeholder="Tap to select your date of birth" value=""required/>
+</div>
+
+            <div class="form-control ">
+    <label for="phone">Phone</label>
+    <input type="phone" name="" placeholder="Enter a phone number unique to your account" value=""required/>
+</div>
+
+            <div class="form-control ">
+    <label for="password">Password</label>
+    
+        <div class="password-meter" data-password-strength="">
+            <div class="password-meter__dot"></div>
+            <div class="password-meter__dot"></div>
+            <div class="password-meter__dot"></div>
+            <div class="password-meter__dot"></div>
+            <div class="password-meter__dot"></div>
+        </div>
+    
+    <input type="password" name="" placeholder="Type a strong password" value=""required/>
+</div>
+
+            <p>By signing up you <a href="#">morbi tristique</a> senectus et <a href="#">netus et malesuada fames ac</a> turpis egestas.</p>
+            <a class="btn bg-blue" href="/patterns/02-pages-00-create-account-02-verify-account/02-pages-00-create-account-02-verify-account.rendered.html">
+    Create Account
+</a>
+
+        </form>
+    </main>
+</div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-page-header","lineagePath":"../../patterns/01-components-page-header\\01-components-page-header.rendered.html"},{"lineagePattern":"elements-input","lineagePath":"../../patterns/00-elements-input\\00-elements-input.rendered.html"},{"lineagePattern":"elements-link-button","lineagePath":"../../patterns/00-elements-buttons-link-button\\00-elements-buttons-link-button.rendered.html"}],"lineage":[{"lineagePattern":"components-page-header","lineagePath":"../../patterns/01-components-page-header\\01-components-page-header.rendered.html"},{"lineagePattern":"elements-input","lineagePath":"../../patterns/00-elements-input\\00-elements-input.rendered.html"},{"lineagePattern":"elements-link-button","lineagePath":"../../patterns/00-elements-buttons-link-button\\00-elements-buttons-link-button.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"create-account"},"patternExtension":"mustache","patternName":"Create Account","patternPartial":"pages-create-account","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1573563051755">
+  (function() {
+    if (self != top) {
+      var cb = '1573563051755';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1573563051755">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>  <script src="../../js/app.js?"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<div class="page page-preferences">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Preferences</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare" href="#"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+        <div class="preference-item">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Contacts Syncing</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-help">
+                    <p>Allow Partie access to your contacts</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item" onclick="openModal('#region-modal')">
+            <span class="preference-label">Region Lock</span>
+            <span class="preference-current">United States, Japan</span>
+        </div>
+        <div class="preference-item" onclick="openModal('#language-modal')">
+            <span class="preference-label">Language</span>
+            <span class="preference-current">English</span>
+        </div>
+    </main>
+        <div class="modal preference-modal dynamic-height" id="region-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/back-carat.svg" alt="Back Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <h2>Choose your region</h2>
+<div class="checkbox-group">
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>United States</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Japan</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Country</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Country</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Country</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+</div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal preference-modal dynamic-height" id="language-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/back-carat.svg" alt="Back Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <h2>Choose your language</h2>
+<div class="checkbox-group">
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>English</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Spanish</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Russian</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Japanese</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Italian</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+</div>
+        </div>
+    </div>
+</div>
+
+</div>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Partie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="../../css/normalize.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1573563051755" media="all" />
+
+    <meta name="theme-color" content="#6E4AFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="bg-dark">
+    
+<div class="page page-messages ">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare" href="#"><img src="/images/icons/24px/user-placeholder.svg" alt="User Placeholder Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Messages</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare" href="#"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+            <div class="person-listing message-item">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">
+        <span>AlphaEcho</span>
+            <div class="tag tag-staff"><span>Staff</span></div>
+    </div>
+    <div class="person-info">
+        <span>Thanks for joining Partie! Here are a few tips to help you get started.</span>
+    </div>
+    <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" alt="Remove Icon"></button>
+</div>
+
+            <div class="person-listing message-item">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">
+        <span>User0302</span>
+    </div>
+    <div class="person-info">
+        <span>Hello, you around?</span>
+    </div>
+    <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" alt="Remove Icon"></button>
+</div>
+
+            <div class="person-listing message-item">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">
+        <span>Shinobi</span>
+    </div>
+    <div class="person-info">
+        <span>Hopping on now! I&#39;ll let you know before we get started.</span>
+    </div>
+    <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" alt="Remove Icon"></button>
+</div>
+
+            <div class="person-listing message-item">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-dash.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">
+        <span>Dash</span>
+    </div>
+    <div class="person-info">
+        <span>Not yet 😂</span>
+    </div>
+    <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" alt="Remove Icon"></button>
+</div>
+
+
+    </main>
+    <button class="btn btn-floating-cta" onclick="openModal('#new-message-modal')"></button>
+    <div class="tap-bar">
+    <nav>
+        <button class="btn btn-bare btn-tap-bar">
+            <img src="/images/icons/24px/home-filled.svg" alt="Home Icon">
+            <span class="t-nav">Home</span>
+        </button>
+        <button class="btn btn-bare btn-tap-bar">
+            <img src="/images/icons/24px/partie.svg" alt="Partie Icon">
+            <span class="t-nav">Partie</span>
+        </button>
+        <button class="btn btn-bare btn-tap-bar">
+            <img src="/images/icons/24px/chat.svg" alt="Chat Icon">
+            <span class="t-nav">Chat</span>
+        </button>
+        <button class="btn btn-bare btn-tap-bar">
+            <img src="/images/icons/24px/account.svg" alt="Account Icon">
+            <span class="t-nav">Account</span>
+        </button>
+    </nav>
+</div>
+
+    <div class="menu-drawer">
+    <div class="content">
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img src="/images/icons/32px/mute.svg" alt="Mute Icon">
+                <span class="action-title">Mute</span>
+                <span class="action-description">Stop seeing posts but continue following</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img src="/images/icons/32px/remove.svg" alt="Remove Icon">
+                <span class="action-title">Unfollow</span>
+                <span class="action-description">Stop seeing posts and unfollow</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img src="/images/icons/32px/block.svg" alt="Block Icon">
+                <span class="action-title">Block</span>
+                <span class="action-description">Stop seeing posts and block account</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item">
+            <div class="btn-inner">
+                <img src="/images/icons/32px/report.svg" alt="Report Icon">
+                <span class="action-title">Report</span>
+                <span class="action-description">Report this account for abuse</span>
+            </div>
+        </button>
+    </div>
+</div>
+
+    <div class="modal show-search" id="new-message-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Message Friends</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="search-input search-settings">
+    <div class="content">
+        <img src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="" />
+        <a href="#" class="cancel">Cancel</a>
+    </div>
+</div>
+
+        <div class="modal-content">
+            <div class="content-scrollable">
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">RomanNin1</div>
+    <div class="person-info">
+            <div class="tag bg-orange"><span>Partner</span></div>
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">AlphaEcho</div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">User03993</div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">RosalinMU</div>
+    <div class="person-info">
+            <div class="tag bg-teal"><span>Staff</span></div>
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">xDeniCx</div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">MeTeMeNeo</div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">Artur305</div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">Biohaz007</div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/add.svg" alt=""></button>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-page-header","lineagePath":"../../patterns/01-components-page-header\\01-components-page-header.rendered.html"},{"lineagePattern":"components-message-item","lineagePath":"../../patterns/01-components-message-item\\01-components-message-item.rendered.html"},{"lineagePattern":"components-tap-bar","lineagePath":"../../patterns/01-components-tap-bar\\01-components-tap-bar.rendered.html"},{"lineagePattern":"components-user-feed-menu","lineagePath":"../../patterns/01-components-user-feed-menu\\01-components-user-feed-menu.rendered.html"},{"lineagePattern":"components-new-message-modal","lineagePath":"../../patterns/01-components-03-messages-new-message-modal\\01-components-03-messages-new-message-modal.rendered.html"}],"lineage":[{"lineagePattern":"components-page-header","lineagePath":"../../patterns/01-components-page-header\\01-components-page-header.rendered.html"},{"lineagePattern":"components-message-item","lineagePath":"../../patterns/01-components-message-item\\01-components-message-item.rendered.html"},{"lineagePattern":"components-tap-bar","lineagePath":"../../patterns/01-components-tap-bar\\01-components-tap-bar.rendered.html"},{"lineagePattern":"components-user-feed-menu","lineagePath":"../../patterns/01-components-user-feed-menu\\01-components-user-feed-menu.rendered.html"},{"lineagePattern":"components-new-message-modal","lineagePath":"../../patterns/01-components-03-messages-new-message-modal\\01-components-03-messages-new-message-modal.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"pages","patternSubtype":"messages"},"patternExtension":"mustache","patternName":"Messages","patternPartial":"pages-messages","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1573563051755">
+  (function() {
+    if (self != top) {
+      var cb = '1573563051755';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1573563051755">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>  <script src="../../js/app.js?"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<div class="page page-home show-search">
+    {{> components-page-header}}
+    <main class="content">
+        {{# noSearchResults }}
+            <p class="no-results">
+                Oops! There are no results for <span class="search-term">"Asdfghj"</span>, but check out what’s trending below...
+            </p>
+        {{/noSearchResults}}
+        {{# statusItems }}
+            {{> components-status }}
+        {{/statusItems}}
+    </main>
+    <button class="btn btn-floating-cta"></button>
+    {{> components-tap-bar }}
+    {{> components-user-feed-menu }}
+</div>

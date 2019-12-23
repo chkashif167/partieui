@@ -1,0 +1,139 @@
+<div class="page page-edit-profile">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Edit Profile</h1>
+            <div class="actions--right">
+                    <a href="#" class="btn btn-bare"><span class="btn-inner">Save</span></a>
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+        <form class="form" action="">
+            <div class="avatar-setting">
+                <img class="avatar" src="/images/avatar-johnny.png" alt="User Avatar">
+                <a href="#">Upload Photo</a>
+            </div>
+                <div class="form-control ">
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" placeholder="" value="Johnny"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" placeholder="" value="Doe"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="dob" placeholder="" value="1999-12-01"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="" value="johnny@doe.com"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" placeholder="" value="415-987-6543"required/>
+</div>
+
+                <div class="form-control ">
+    <label for="location">Location</label>
+    <input type="text" name="location" placeholder="" value="San Francisco, CA"required/>
+</div>
+
+
+            <div class="form-control">
+                <label for="bio">Bio</label>
+                <textarea name="bio" id="bio" required>Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarers cray gastropub cred green juice PBR&B.</textarea>
+            </div>
+
+                <div class="form-control ">
+    <label for="profileLink">Link</label>
+    <input type="text" name="profileLink" placeholder="" value="http:&#x2F;&#x2F;www.mysite.com"required/>
+</div>
+
+                <div class="form-control platforms-select custom-select">
+    <label for="platforms">Platforms</label>
+    <input type="text" name="platforms" placeholder="" value="PS4, XBOX, Steam"/>
+</div>
+
+            <div class="social-connection">
+                <button class="btn btn-bare facebook-connect connected">
+                    <span class="btn-inner">
+                        <img src="/images/facebook.png" srcset="/images/facebook@2x.png 2x, /images/facebook@3x.png 3x" alt="Facebook Logo">
+                            <span>my.facebook.username</span>
+                    </span>
+                </button>
+                    <a href="#">Unlink Account</a>
+            </div>
+        </form>
+    </main>
+        <div class="modal preference-modal dynamic-height" id="platforms-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/back-carat.svg" alt="Back Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <h2>Select Your Platforms</h2>
+                <div class="checkbox-group">
+        <div class="checkbox-item">
+            <label class="checkbox checked">
+    <span>PS4</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox checked">
+    <span>XBOX</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox checked">
+    <span>Steam</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Uplay</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+        <div class="checkbox-item">
+            <label class="checkbox ">
+    <span>Epic</span>
+    <input type="checkbox" onchange="toggleCheckboxClass(event)">
+    <img src="/images/icons/misc/check.svg" class="check-icon-off" alt="Check Icon">
+    <img src="/images/icons/misc/check-green.svg" class="check-icon-on" alt="Check Icon">
+</label>
+
+        </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+</div>

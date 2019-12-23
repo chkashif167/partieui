@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Partie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="../../css/normalize.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1573563051755" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1573563051755" media="all" />
+
+    <meta name="theme-color" content="#6E4AFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="bg-dark">
+    
+<div class="modal terms-modal" id="terms-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Terms</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable pb-24">
+                <h3 class="section-heading">Section Title</h3>
+                <p>90's health goth hella squid palo santo, brooklyn chillwave austin letterpress flexitarian. Crucifix tote bag cardigan, hell of tofu XOXO bespoke meditation hammock vinyl jianbing subway tile keffiyeh. Intelligentsia sustainable woke, twee scenester gastropub prism pickled vinyl. Crucifix unicorn flexitarian pinterest meh chicharrones. Occupy chia freegan, schlitz cloud bread humblebrag quinoa banjo.</p>
+                <p>Wayfarers kogi bicycle rights, seitan paleo swag raw denim edison bulb synth literally banjo. Knausgaard swag scenester meditation, microdosing wolf bespoke lo-fi fashion axe salvia. Helvetica snackwave hella lo-fi kale chips tumblr subway tile viral selfies pabst deep v man braid drinking vinegar. +1 activated charcoal small batch flannel ennui, mumblecore cred blue bottle meggings pop-up actually whatever locavore. 3 wolf moon air plant pok pok before they sold out franzen.</p>
+                <h3 class="section-heading">Section Title II</h3>
+                <p>Cornhole fixie distillery synth slow-carb, biodiesel marfa hammock lomo whatever meggings everyday carry deep v pickled echo park. PBR&B four loko kinfolk mixtape pork belly viral craft beer bespoke put a bird on it YOLO kogi tofu seitan. Chartreuse tattooed twee listicle, schlitz slow-carb VHS asymmetrical meggings tumeric yr af gentrify bicycle rights. Cardigan crucifix palo santo helvetica ethical. Umami locavore echo park af vegan tumeric kale chips unicorn taxidermy scenester lo-fi.</p>
+                <p>Vape lumbersexual echo park, brooklyn lomo iceland lo-fi keytar next level 8-bit la croix banh mi. Flexitarian direct trade forage, everyday carry vexillologist authentic seitan activated charcoal try-hard. Biodiesel meditation adaptogen migas poutine bicycle rights cliche messenger bag. 3 wolf moon vexillologist artisan, aesthetic before they sold out knausgaard direct trade hashtag typewriter mlkshk copper mug cold-pressed.</p>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-account-partner","lineagePath":"../../patterns/02-pages-08-account-00-account-partner\\02-pages-08-account-00-account-partner.rendered.html"},{"lineagePattern":"pages-account-pending-review","lineagePath":"../../patterns/02-pages-08-account-00-account-pending-review\\02-pages-08-account-00-account-pending-review.rendered.html"},{"lineagePattern":"pages-account-progress-complete","lineagePath":"../../patterns/02-pages-08-account-00-account-progress-complete\\02-pages-08-account-00-account-progress-complete.rendered.html"},{"lineagePattern":"pages-account","lineagePath":"../../patterns/02-pages-08-account-00-account\\02-pages-08-account-00-account.rendered.html"}],"lineageR":[{"lineagePattern":"pages-account-partner","lineagePath":"../../patterns/02-pages-08-account-00-account-partner\\02-pages-08-account-00-account-partner.rendered.html"},{"lineagePattern":"pages-account-pending-review","lineagePath":"../../patterns/02-pages-08-account-00-account-pending-review\\02-pages-08-account-00-account-pending-review.rendered.html"},{"lineagePattern":"pages-account-progress-complete","lineagePath":"../../patterns/02-pages-08-account-00-account-progress-complete\\02-pages-08-account-00-account-progress-complete.rendered.html"},{"lineagePattern":"pages-account","lineagePath":"../../patterns/02-pages-08-account-00-account\\02-pages-08-account-00-account.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"components","patternSubtype":"account"},"patternExtension":"mustache","patternName":"Terms Modal","patternPartial":"components-terms-modal","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1573563051755">
+  (function() {
+    if (self != top) {
+      var cb = '1573563051755';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1573563051755">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>  <script src="../../js/app.js?"></script>
+  </body>
+</html>

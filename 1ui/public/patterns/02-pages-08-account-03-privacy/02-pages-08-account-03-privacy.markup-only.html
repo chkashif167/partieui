@@ -1,0 +1,276 @@
+<div class="page page-preferences">
+    <header class="">
+        <div class="content">
+            <div class="actions--left">
+                    <a class="btn btn-bare" href=""><img src="/images/icons/24px/back.svg" alt="Back Icon"></a>
+            </div>
+            <h1 class="h2 t-center">Privacy &amp; Safety</h1>
+            <div class="actions--right">
+                    <a class="btn btn-bare" href="#"><img src="/images/icons/24px/notifications-on.svg" alt="Unread Notifications Icon"></a>
+            </div>
+        </div>
+</header>
+
+    <main class="content">
+        <div class="preference-item">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Appear Offline</span>
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleSettingClass(event)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-help">
+                    <p>Lorem ipsum dolor description</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item">
+            <div class="setting-toggle">
+                <div class="toggle-main">
+                    <div class="label-group">
+                        <span class="setting-toggle-label">Allow Direct messages</span>
+                    </div>
+                    <label class="switch on">
+                        <input type="checkbox" onchange="toggleSettingClass(event)" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-help">
+                    <p>Lorem ipsum dolor description</p>
+                </div>
+            </div>
+        </div>
+        <div class="preference-item short" onclick="openModal('#muted-modal')">
+            <span class="preference-label">Muted Accounts</span>
+        </div>
+        <div class="preference-item short" onclick="openModal('#blocked-modal')">
+            <span class="preference-label">Blocked Accounts</span>
+        </div>
+    </main>
+        <div class="modal" id="blocked-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Blocked Accounts</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">RomanNin1</div>
+    <div class="person-info">
+            <div class="tag bg-orange"><span>Partner</span></div>
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">AlphaEcho</div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">User03993</div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">RosalinMU</div>
+    <div class="person-info">
+            <div class="tag bg-teal"><span>Staff</span></div>
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">xDeniCx</div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">MeTeMeNeo</div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">Artur305</div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">Biohaz007</div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal" id="muted-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Muted Acccounts</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">RomanNin1</div>
+    <div class="person-info">
+            <div class="tag bg-orange"><span>Partner</span></div>
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">AlphaEcho</div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">User03993</div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">RosalinMU</div>
+    <div class="person-info">
+            <div class="tag bg-teal"><span>Staff</span></div>
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">xDeniCx</div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">MeTeMeNeo</div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">Artur305</div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+                    <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">Biohaz007</div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25"><img src="/images/icons/32px/remove.svg" alt=""></button>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

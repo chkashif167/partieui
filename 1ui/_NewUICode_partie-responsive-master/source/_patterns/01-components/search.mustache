@@ -1,0 +1,12 @@
+<div class="search-input search-settings">
+    <div class="content">
+        <img src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="{{ searchPlaceholder }}" />
+        <a href="#" class="cancel">Cancel</a>
+        {{#searchSettings}}
+            <button class="btn btn-bare btn-settings" onclick="openModal('#search-settings-modal')"><img
+                    src="/images/icons/24px/settings.svg"
+                    alt="Settings Icon"></button>
+        {{/searchSettings}}
+    </div>
+</div>
