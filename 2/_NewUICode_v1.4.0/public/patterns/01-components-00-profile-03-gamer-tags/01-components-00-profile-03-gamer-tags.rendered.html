@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Partie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker@5.0.3/dist/datepicker.min.css" />
+    <link rel="stylesheet" href="../../css/normalize.css?1572262836141" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1572262836141" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1572262836141" media="all" />
+
+    <meta name="theme-color" content="#6E4AFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="bg-dark">
+    
+<div class="gamer-tags">
+    <div class="gamer-tag">
+        <img src="/images/icons/16px/steam.svg" alt="Steam Logo">
+        <span>Gamertag938</span>
+    </div>
+    <div class="gamer-tag">
+        <img src="/images/icons/16px/xbox.svg" alt="Xbox Logo">
+        <span>RandomTag20223</span>
+    </div>
+    <div class="gamer-tag">
+        <img src="/images/icons/16px/playstation.svg" alt="Playstation Logo">
+        <span>UserTag20</span>
+    </div>
+</div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"pages-public-profile-following","lineagePath":"../../patterns/02-pages-04-profile-00-public-profile-following\\02-pages-04-profile-00-public-profile-following.rendered.html"},{"lineagePattern":"pages-public-profile-personal","lineagePath":"../../patterns/02-pages-04-profile-00-public-profile-personal\\02-pages-04-profile-00-public-profile-personal.rendered.html"},{"lineagePattern":"pages-public-profile-standard","lineagePath":"../../patterns/02-pages-04-profile-00-public-profile-standard\\02-pages-04-profile-00-public-profile-standard.rendered.html"},{"lineagePattern":"pages-public-profile","lineagePath":"../../patterns/02-pages-04-profile-00-public-profile\\02-pages-04-profile-00-public-profile.rendered.html"}],"lineageR":[{"lineagePattern":"pages-public-profile-following","lineagePath":"../../patterns/02-pages-04-profile-00-public-profile-following\\02-pages-04-profile-00-public-profile-following.rendered.html"},{"lineagePattern":"pages-public-profile-personal","lineagePath":"../../patterns/02-pages-04-profile-00-public-profile-personal\\02-pages-04-profile-00-public-profile-personal.rendered.html"},{"lineagePattern":"pages-public-profile-standard","lineagePath":"../../patterns/02-pages-04-profile-00-public-profile-standard\\02-pages-04-profile-00-public-profile-standard.rendered.html"},{"lineagePattern":"pages-public-profile","lineagePath":"../../patterns/02-pages-04-profile-00-public-profile\\02-pages-04-profile-00-public-profile.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"components","patternSubtype":"profile"},"patternExtension":"mustache","patternName":"Gamer Tags","patternPartial":"components-gamer-tags","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1572262836141">
+  (function() {
+    if (self != top) {
+      var cb = '1572262836141';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1572262836141">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha256-fTuUgtT7O2rqoImwjrhDgbXTKUwyxxujIMRIK7TbuNU=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/js-datepicker@5.0.3/dist/datepicker.min.js"></script>
+  <script src="../../js/app.js?"></script>
+  </body>
+</html>

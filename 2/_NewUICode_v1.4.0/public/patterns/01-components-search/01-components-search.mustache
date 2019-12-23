@@ -1,0 +1,19 @@
+<div class="search-input search-settings">
+    <div class="content">
+        <img src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="{{ searchPlaceholder }}" />
+        <a href="#" class="cancel">Cancel</a>
+        {{#searchSettings}}
+            <button class="btn btn-bare btn-settings" onclick="openModal('#search-settings-modal')"><img
+                    src="/images/icons/24px/settings.svg"
+                    alt="Settings Icon"></button>
+        {{/searchSettings}}
+    </div>
+    <div class="content search__options">
+        <a href="#" class="btn btn-bare">Feed</a>
+        <a href="#" class="btn btn-bare active">Profiles</a>
+        <a href="#" class="btn btn-bare">Parties</a>
+        <a href="#" class="btn btn-bare">Clubs</a>
+        <a href="#" class="btn btn-bare">Likes</a>
+    </div>
+</div>

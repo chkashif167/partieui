@@ -1,0 +1,9 @@
+{
+  "bodyClass": "bg-black has-side-nav",
+  "sideNavHome": true,
+  "pageHeader": {
+    "back": true,
+    "submit": true,
+    "title": "Create Post"
+  }
+}

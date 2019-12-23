@@ -1,0 +1,36 @@
+<div class="side-nav hide-mobile hide-tablet">
+    <div class="side-nav__header">
+        <img src="/images/side-nav-logo.svg" alt="Partie Logo" class="logo">
+        <a href="{{ link.pages-notifications }}" onclick="toggleNotificationsTray(event)" class="btn btn-bare">
+            <img src="/images/icons/24px/notifications-on.svg"  alt="Notifications Pending Icon"/>
+        </a>
+    </div>
+    <nav class="side-nav__links">
+        <a href="{{ link.pages-home }}" class="nav-item {{#sideNavHome}}active{{/sideNavHome}}">
+            <img src="/images/icons/24px/home-filled.svg" class="nav-item__icon"  alt="Home Icon"/>
+            <span class="nav-item__title">Home</span>
+        </a>
+        <a href="{{ link.pages-partie-list }}" class="nav-item {{#sideNavPartie}}active{{/sideNavPartie}}">
+            <img src="/images/icons/24px/partie.svg" class="nav-item__icon"  alt="Partie Icon"/>
+            <span class="nav-item__title">Partie</span>
+        </a>
+        <a href="{{ link.pages-messages }}" class="nav-item {{#sideNavMessages}}active{{/sideNavMessages}}">
+            <img src="/images/icons/24px/chat.svg" class="nav-item__icon"  alt="Messages Icon"/>
+            <span class="nav-item__title">Messages</span>
+        </a>
+        <a href="{{ link.pages-account }}" class="nav-item {{#sideNavAccount}}active{{/sideNavAccount}}">
+            <img src="/images/icons/24px/account.svg" class="nav-item__icon"  alt="Account Icon"/>
+            <span class="nav-item__title">Account</span>
+        </a>
+        <a href="{{ link.pages-store }}" class="nav-item {{#sideNavStore}}active{{/sideNavStore}}">
+            <img src="/images/icons/24px/store.svg" class="nav-item__icon"  alt="Store Icon"/>
+            <span class="nav-item__title">Store</span>
+        </a>
+    </nav>
+    <div class="side-nav__profile {{#sideNavProfile}}active{{/sideNavProfile}}">
+        {{> components-profile-avatar }}
+        <span class="username">RandomDash</span>
+        <span class="user-level">Level 64</span>
+        <button class="btn btn-bare"><img src="/images/icons/32px/more-dots.svg" alt="Menu Icon"></button>
+    </div>
+</div>

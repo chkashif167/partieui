@@ -1,0 +1,21 @@
+<div class="person-listing follow-person">
+    <div class="avatar">
+        <img src="{{ avatarUrl }}" alt="Avatar Alt Text">
+        {{#online}}
+            <div class="online-indicator"></div>
+        {{/online}}
+    </div>
+    <div class="person-name">{{ userName }}</div>
+    <div class="person-info">
+        {{#tagLabel}}
+            <div class="tag {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+        {{/tagLabel}}
+        <span class="followers">{{ followersCount }} Followers</span>
+    </div>
+    {{^following}}
+        <button class="btn btn-fit bg-black">Follow</button>
+    {{/following}}
+    {{#following}}
+        <button class="btn btn-outline btn-fit">Following</button>
+    {{/following}}
+</div>

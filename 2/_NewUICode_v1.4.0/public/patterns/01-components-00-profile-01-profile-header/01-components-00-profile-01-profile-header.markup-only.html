@@ -1,0 +1,57 @@
+<div class="profile-header">
+    <div class="profile-header-container">
+        <div class="profile-avatar">
+    <svg class="level-indicator" data-percentage="64" viewBox="0 0 192 192">
+        <defs>
+            <radialGradient id="radial-teal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 96) rotate(90) scale(86)">
+                <stop offset="0.123353" stop-color="#26F2FF"/>
+                <stop offset="0.498893" stop-color="#2BC5CF"/>
+            </radialGradient>
+
+            <radialGradient id="radial-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(96 96) rotate(90) scale(86)">
+                <stop offset="0.104167" stop-color="#6E4AFF"/>
+                <stop offset="0.510417" stop-color="#792DDA"/>
+            </radialGradient>
+        </defs>
+
+        <circle class="incomplete" cx="96" cy="96" r="86" stroke="url(#radial-blue)"></circle>
+        <circle class="complete" cx="96" cy="96" r="86" stroke="url(#radial-teal)"></circle>
+    </svg>
+    <img src="/images/avatar-large.png" alt="Avatar Alt Text" class="avatar">
+    <div class="online-indicator"></div>
+</div>
+
+        <h1 class="h2 profile-name">Nathan728</h1>
+        <div class="profile-meta">
+            <span class="profile-level">Level 64</span>
+        </div>
+        <div class="profile-actions">
+                    <button class="btn bg-dark"><span class="btn-inner">Follow</span></button>
+                <button class="btn bg-dark"><span class="btn-inner"><img src="/images/icons/24px/chat.svg" alt="Chat Icon"> Message</span></button>
+        </div>
+    </div>
+    <div class="profile-quick-stats">
+    <div class="quick-stat" onclick="openModal('#followers-modal')">
+        <span class="quick-stat-figure">239</span>
+        <span class="quick-stat-label">Following</span>
+    </div>
+    <div class="quick-stat" onclick="openModal('#followers-modal')">
+        <span class="quick-stat-figure">98</span>
+        <span class="quick-stat-label">Followers</span>
+    </div>
+    <div class="quick-stat" onclick="openModal('#parties-modal')">
+        <span class="quick-stat-figure">33</span>
+        <span class="quick-stat-label">Parties</span>
+    </div>
+    <div class="quick-stat" onclick="openModal('#badges-modal')">
+        <span class="quick-stat-figure">14</span>
+        <span class="quick-stat-label">Badges</span>
+    </div>
+</div>
+
+    <div class="bg-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+</div>

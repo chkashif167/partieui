@@ -1,0 +1,115 @@
+{
+  "bodyClass": "bg-dark has-side-nav",
+  "sideNavMessages": true,
+  "pageHeader": {
+    "account": true,
+    "notifications": true,
+    "title": "Messages"
+  },
+  "messages": [
+    {
+      "avatarUrl": "/images/avatar-alpha.png",
+      "userName": "AlphaEcho",
+      "tagLabel": "Staff",
+      "tagClass": "tag-staff",
+      "messageText": "Thanks for joining Partie! Here are a few tips to help you get started.",
+      "timeStamp": "7:30 PM"
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "userName": "User0302",
+      "messageText": "Hello, you around?",
+      "timeStamp": "7:30 PM"
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": true,
+      "userName": "Shinobi",
+      "messageText": "Hopping on now! I'll let you know before we get started.",
+      "timeStamp": "22 hours ago"
+    }, {
+      "avatarUrl": "/images/avatar-dash.png",
+      "online": true,
+      "userName": "Dash",
+      "messageText": "Not yet \uD83D\uDE02",
+      "timeStamp": "3 days ago"
+    }
+  ],
+  "friends": [
+    {
+      "avatarUrl": "/images/avatar-roman.png",
+      "online": true,
+      "userName": "RomanNin1",
+      "tagClass": "bg-orange",
+      "tagLabel": "Partner",
+      "followersCount": "56",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-alpha.png",
+      "online": false,
+      "userName": "AlphaEcho",
+      "followersCount": "81",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": true,
+      "userName": "User03993",
+      "followersCount": "827",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-rosalin.png",
+      "online": true,
+      "userName": "RosalinMU",
+      "tagClass": "bg-teal",
+      "tagLabel": "Staff",
+      "followersCount": "2,039",
+      "following": true,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "xDeniCx",
+      "followersCount": "72",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-mete.png",
+      "online": true,
+      "userName": "MeTeMeNeo",
+      "followersCount": "88",
+      "following": false,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-placeholder.png",
+      "online": false,
+      "userName": "Artur305",
+      "followersCount": "32",
+      "following": true,
+      "add": true
+    }, {
+      "avatarUrl": "/images/avatar-anton.png",
+      "online": true,
+      "userName": "Biohaz007",
+      "followersCount": "23",
+      "following": false,
+      "add": true
+    }
+  ],
+  ,
+  "conversation": [
+    {
+      "avatarPath": "/images/avatar-alpha.png",
+      "authorName": "AlphaEcho",
+      "tagText": "Staff",
+      "tagClass": "tag-staff",
+      "chatMessage": "Thanks for joining Partie! Here are a few tips to help you get started. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "chatDetails": "7:30 PM"
+    }, {
+      "avatarPath": "/images/avatar-mete.png",
+      "authorName": "MeTeMeNeo",
+      "chatMessage": "That's awesome, thank you! \uD83D\uDE01",
+      "chatDetails": "7:31 PM"
+    }
+  ]
+}

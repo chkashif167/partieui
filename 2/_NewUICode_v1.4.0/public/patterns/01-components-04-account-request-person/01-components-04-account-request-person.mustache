@@ -1,0 +1,19 @@
+<div class="person-listing notification-item">
+    <div class="avatar">
+        <img src="{{ avatarUrl }}" alt="Avatar Alt Text">
+        {{#online}}
+            <div class="online-indicator"></div>
+        {{/online}}
+    </div>
+    <div class="person-name">{{ userName }}</div>
+    <div class="person-info">
+        {{#tagLabel}}
+            <div class="tag {{ tagClass }}"><span>{{ tagLabel }}</span></div>
+        {{/tagLabel}}
+        <span class="followers">{{ followersCount }} Followers</span>
+    </div>
+    <div class="btn-group request-actions">
+        <button class="btn btn-bare"><img src="/images/icons/32px/remove.svg" class="remove-icon" alt="Remove Icon"></button>
+        <button class="btn btn-bare"><img src="/images/icons/32px/check.svg" alt="Check Icon"></button>
+    </div>
+</div>

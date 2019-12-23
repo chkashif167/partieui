@@ -1,0 +1,23 @@
+<div class="chat-message {{#chatCtaText}}cta{{/chatCtaText}}">
+    {{#avatarPath}}
+        <img src="{{ avatarPath }}" alt="Avatar Alt Text" class="avatar">
+    {{/avatarPath}}
+    {{^avatarPath}}
+        <div class="avatar">
+            <img src="/images/icons/24px/partie-filled.svg" alt="Partie Logo">
+        </div>
+    {{/avatarPath}}
+    <div class="chat-message-meta">
+        <span class="chat-message-author">{{ authorName }}</span>
+        {{#tagText}}
+            <div class="tag {{ tagClass }}"><span>{{ tagText }}</span></div>
+        {{/tagText}}
+        <span class="chat-message-details">{{ chatDetails }}</span>
+    </div>
+    <div class="chat-message-content">
+        {{ chatMessage }}
+    </div>
+    {{#chatCtaText}}
+        <button class="btn bg-teal chat-message-cta">{{ chatCtaText }}</button>
+    {{/chatCtaText}}
+</div>

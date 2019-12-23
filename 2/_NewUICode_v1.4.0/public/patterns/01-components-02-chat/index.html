@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <title>Partie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" />
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker@5.0.3/dist/datepicker.min.css" />
+    <link rel="stylesheet" href="../../css/normalize.css?1576488600970" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1576488600970" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1576488600970" media="all" />
+
+    <meta name="theme-color" content="#6E4AFF" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <link rel="stylesheet" href="../../styleguide/css/pattern-lab.css?1576488600970" media="all">
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="bg-dark">
+    
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="pl-c-main">
+  
+	<!-- Index of Patterns -->
+	<div class="pl-c-pattern-index">
+	
+<div id="viewall-components-chat" class="pl-c-category">
+		
+	<h2 class="pl-c-category__title">
+		<a href="../../patterns/01-components-02-chat\index.html" class="pl-c-category__title-link patternLink" data-patternpartial="viewall-components-chat">chat</a>
+	</h2><!--end pl-c-category__title-->
+
+	<div class="pl-c-category__description pl-c-text-passage">
+		
+	</div><!--end pl-c-category__description-->
+	
+</div><!--end pl-c-category-->
+	<div id="components-chat-input" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-chat-input\01-components-02-chat-chat-input.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-chat-input" title="Link to Pattern">
+				Chat Input
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-chat-input" data-patternpartial="components-chat-input" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-chat-input">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="chat-input">
+    <div class="form-control">
+        <textarea name="chat-message" id="message-input" placeholder="Say anything you want, be nice."></textarea>
+    </div>
+    <button class="btn">Send</button>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-chat-input" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-chat-menu" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-chat-menu\01-components-02-chat-chat-menu.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-chat-menu" title="Link to Pattern">
+				Chat Menu
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-chat-menu" data-patternpartial="components-chat-menu" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-chat-menu">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="menu-drawer">
+    <div class="content">
+        <button class="btn btn-bare btn-menu-item" onclick="toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/commence-partie.svg" alt="Commence Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/commence-partie-blue.svg" alt="Commence Partie">
+                <span class="action-title">Commence Partie</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#partie-settings-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/partie-settings.svg" alt="Share Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/partie-settings-blue.svg" alt="Share Partie">
+                <span class="action-title">Partie Settings</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#twitter-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/share-partie.svg" alt="Share Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/share-partie-blue.svg" alt="Share Partie">
+                <span class="action-title">Share Partie</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consecteturw</span>
+            </div>
+        </button>
+        <button class="btn btn-bare btn-menu-item" onclick="openModal('#leave-partie-modal'); toggleFeedMenu();">
+            <div class="btn-inner">
+                <img class="hide-tablet hide-desktop" src="/images/icons/misc/end-partie.svg" alt="Share Partie">
+                <img class="show-tablet show-desktop" src="/images/icons/misc/end-partie-blue.svg" alt="Share Partie">
+                <span class="action-title">End Partie</span>
+                <span class="action-description">Lorem ipsum dolor sit amet, consectetur adipi</span>
+            </div>
+        </button>
+    </div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-chat-menu" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-chat-message" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-chat-message\01-components-02-chat-chat-message.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-chat-message" title="Link to Pattern">
+				Chat Message
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-chat-message" data-patternpartial="components-chat-message" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-chat-message">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="chat-message ">
+        <div class="avatar">
+            <img src="/images/icons/24px/partie-filled.svg" alt="Partie Logo">
+        </div>
+    <div class="chat-message-meta">
+        <span class="chat-message-author"></span>
+        <span class="chat-message-details"></span>
+    </div>
+    <div class="chat-message-content">
+        
+    </div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-chat-message" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-chat-notification" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-chat-notification\01-components-02-chat-chat-notification.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-chat-notification" title="Link to Pattern">
+				Chat Notification
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-chat-notification" data-patternpartial="components-chat-notification" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-chat-notification">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="chat-notification ">
+        <span class="message"><strong>AlphaEcho</strong> has joined the Partie</span>
+        <div class="detail">7:29 PM</div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-chat-notification" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-chat-side-bar" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-chat-side-bar\01-components-02-chat-chat-side-bar.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-chat-side-bar" title="Link to Pattern">
+				Chat Side Bar
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-chat-side-bar" data-patternpartial="components-chat-side-bar" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-chat-side-bar">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="chat-side-bar bg-dark">
+        <div class="partie-item partie-item--detailed " onclick="openModal('#join-modal')">
+    <div class="image-block">
+        <img src="&#x2F;images&#x2F;partie-1.png" alt="Partie Image Alt">
+        <div class="image-overlay">
+            <img src="/images/icons/24px/partie-filled-teal.svg" class="icon-available" alt="Partie Icon">
+            <img src="/images/icons/24px/partie-filled-red.svg" class="icon-full" alt="Partie Icon">
+            <span class="partie-spots">12 / 20</span>
+            <span class="time-remaining ">
+                
+                00:56:01
+            </span>
+        </div>
+    </div>
+    <div class="content-block">
+        <span class="partie-title">PartieNameTitle</span>
+        <p class="partie-description">Put a bird on it intelligentsia hella, leggings roof party everyday carry listicle wayfarerse.</p>
+        <div class="partie-meta">
+            <div class="partie-badges">
+                    <img src="/images/icons/16px/xbox-blue-muted.svg" alt="Xbox Icon">
+                    <div class="tag bg-blue">PVE</div>
+            </div>
+            <span class="partie-game">Apex Legends</span>
+        </div>
+    </div>
+</div>
+
+    <h3>Users</h3>
+    <div class="content-scrollable">
+            <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-roman.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">RomanNin1</div>
+    <div class="person-info">
+            <div class="tag bg-orange"><span>Partner</span></div>
+        <span class="followers">56 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-alpha.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">AlphaEcho</div>
+    <div class="person-info">
+        <span class="followers">81 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">User03993</div>
+    <div class="person-info">
+        <span class="followers">827 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-rosalin.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">RosalinMU</div>
+    <div class="person-info">
+            <div class="tag bg-teal"><span>Staff</span></div>
+        <span class="followers">2,039 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">xDeniCx</div>
+    <div class="person-info">
+        <span class="followers">72 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-mete.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">MeTeMeNeo</div>
+    <div class="person-info">
+        <span class="followers">88 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-placeholder.png" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name">Artur305</div>
+    <div class="person-info">
+        <span class="followers">32 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+            <div class="person-listing participant">
+    <div class="avatar">
+        <img src="&#x2F;images&#x2F;avatar-anton.png" alt="Avatar Alt Text">
+            <div class="online-indicator"></div>
+    </div>
+    <div class="person-name">Biohaz007</div>
+    <div class="person-info">
+        <span class="followers">23 Followers</span>
+    </div>
+        <button class="btn btn-bare o-25" onclick="closeModal(); openModal('#removal-modal')"><img src="/images/icons/32px/remove.svg" alt="Remove"></button>
+</div>
+
+    </div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-chat-side-bar" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-chat-user-list" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-chat-user-list\01-components-02-chat-chat-user-list.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-chat-user-list" title="Link to Pattern">
+				Chat User List
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-chat-user-list" data-patternpartial="components-chat-user-list" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-chat-user-list">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="chat-user-list">
+    <div class="users" onclick="openModal('#participants-modal')">
+        <span class="user-names">HostName, Username, Username, Username, Username</span>
+        <span class="users-more">+4 more</span>
+    </div>
+    <div class="user-actions">
+            <button class="btn btn-circle bg-teal" onclick="openModal('#requests-modal')"><span>8</span></button>
+            <button class="btn btn-bare" onclick="openModal('#invite-modal')"><img src="/images/icons/24px/add.svg"
+                                                                                   alt="Add Icon"></button>
+    </div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-chat-user-list" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-invite-modal" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-invite-modal\01-components-02-chat-invite-modal.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-invite-modal" title="Link to Pattern">
+				Invite Modal
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-invite-modal" data-patternpartial="components-invite-modal" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-invite-modal">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="modal show-search" id="invite-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Invite Friends</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="search-input search-settings">
+    <div class="content">
+        <img src="/images/icons/16px/search.svg" alt="Search Icon">
+        <input type="text" name="search" id="search" placeholder="" />
+        <a href="#" class="cancel">Cancel</a>
+    </div>
+    <div class="content search__options">
+        <a href="#" class="btn btn-bare">Feed</a>
+        <a href="#" class="btn btn-bare active">Profiles</a>
+        <a href="#" class="btn btn-bare">Parties</a>
+        <a href="#" class="btn btn-bare">Clubs</a>
+        <a href="#" class="btn btn-bare">Likes</a>
+    </div>
+</div>
+
+        <div class="modal-content">
+            <div class="content-scrollable">
+            </div>
+        </div>
+    </div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-invite-modal" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-participant" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-participant\01-components-02-chat-participant.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-participant" title="Link to Pattern">
+				Participant
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-participant" data-patternpartial="components-participant" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-participant">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="person-listing participant">
+    <div class="avatar">
+        <img src="" alt="Avatar Alt Text">
+    </div>
+    <div class="person-name"></div>
+    <div class="person-info">
+        <span class="followers"> Followers</span>
+    </div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-participant" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-participants-modal" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-participants-modal\01-components-02-chat-participants-modal.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-participants-modal" title="Link to Pattern">
+				Participants Modal
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-participants-modal" data-patternpartial="components-participants-modal" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-participants-modal">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="modal" id="participants-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">9 Participants</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+            </div>
+        </div>
+    </div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-participants-modal" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-removal-modal" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-removal-modal\01-components-02-chat-removal-modal.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-removal-modal" title="Link to Pattern">
+				Removal Modal
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-removal-modal" data-patternpartial="components-removal-modal" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-removal-modal">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="modal removal-modal dynamic-height" id="removal-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">Reason for removal</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+
+                <button class="btn bg-teal btn-fit btn-remove">Remove</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-removal-modal" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern--><div id="components-requests-modal" class="pl-c-pattern">
+
+	<div class="pl-c-pattern__header">
+
+		<h3 class="pl-c-pattern__title">
+				
+			<a href="../../patterns/01-components-02-chat-requests-modal\01-components-02-chat-requests-modal.rendered.html" class="pl-c-pattern__title-link patternLink" data-patternpartial="components-requests-modal" title="Link to Pattern">
+				Requests Modal
+				
+
+			</a><!--end pl-c-pattern__title-link-->
+
+		</h3><!--end pl-c-pattern__title-->
+
+		<button class="pl-c-pattern__extra-toggle pl-js-pattern-extra-toggle" id="pl-pattern-extra-toggle-components-requests-modal" data-patternpartial="components-requests-modal" title="View Pattern Info">
+			<span class="pl-c-pattern__toggle-icon">&#9660;</span>
+		</button><!--end pl-c-pattern__extra-toggle-->
+		
+	</div><!--end pl-c-pattern__header-->
+  
+	<div class="pl-c-pattern__extra pl-js-pattern-extra" id="pl-pattern-extra-components-requests-modal">
+    </div><!--end pl-c-pattern__extra-->
+
+	<div class="pl-js-pattern-example">
+	<div class="modal" id="requests-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <div class="modal-header">
+            <h2 class="modal-title">8 Requests</h2>
+            <button class="btn bg-black btn-close" onclick="closeModal()">
+                <img src="/images/icons/misc/close-x.svg" alt="Close Icon">
+            </button>
+        </div>
+        <div class="modal-content">
+            <div class="content-scrollable">
+            </div>
+        </div>
+    </div>
+</div>
+
+	</div><!--end pl-js-pattern-example-->
+
+	<script type="text/json" id="pl-pattern-data-components-requests-modal" class="pl-js-pattern-data">
+	
+	</script>
+
+</div><!--end pl-c-pattern-->
+  </div><!--end pl-c-pattern-index-->
+
+</div><!--end pl-c-main-->
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"patternPartial":"viewall-components-02-chat"}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1576488600970">
+  (function() {
+    if (self != top) {
+      var cb = '1576488600970';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1576488600970">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha256-qGOnfp7iY6DsnB55K7M+0PZjWCtzafRyJh33tgQJkMQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js" integrity="sha256-UJoqRMiZ86QgG17Pw8Dy4XoUyGg8JuBAxH8YC8qTjcQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js" integrity="sha256-fTuUgtT7O2rqoImwjrhDgbXTKUwyxxujIMRIK7TbuNU=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/js-datepicker@5.0.3/dist/datepicker.min.js"></script>
+  <script src="../../js/app.js?1576488600970"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<div class="status-meta">
+    <div class="avatar">
+        <img src="{{ avatarPath }}" alt="Avatar Alt Text">
+        {{#authorOnline}}
+            <div class="online-indicator"></div>
+        {{/authorOnline}}
+    </div>
+    <div class="author-name">{{ authorName }}</div>
+    <div class="status-info">
+        {{#hasAuthorTag}}
+            <div class="tag {{ tagType }}"><span>{{ authorTag }}</span></div>
+        {{/hasAuthorTag}}
+        <span class="time-ago">7 minutes ago</span>
+    </div>
+    {{> elements-like-button }}
+    {{> elements-menu-button }}
+</div>

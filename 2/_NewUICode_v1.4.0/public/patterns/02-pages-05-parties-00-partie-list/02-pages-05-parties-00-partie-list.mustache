@@ -1,0 +1,14 @@
+{{> components-side-nav }}
+{{> components-notifications-tray }}
+<div class="page page-partie-list show-search">
+    {{> components-page-header }}
+    <main class="content">
+        {{# parties }}
+            {{> components-partie-list-item }}
+        {{/parties}}
+    </main>
+    <a href="{{ link.pages-host-partie }}" class="btn btn-floating-cta"></a>
+    {{> components-tap-bar }}
+    {{> components-join-modal }}
+    {{> components-follow-requests-modal }}
+</div>
